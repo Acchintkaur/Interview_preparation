@@ -7,7 +7,7 @@ def LCS(X,Y):
                 dp[i][j]=dp[i-1][j-1]+1
             else:
                 dp[i][j]=max(dp[i][j-1],dp[i-1][j])
-    return dp[m][n]
+    return dp[m][n]  
 X=input()
-Y=input()
+Y=input()  
 print(LCS(X,Y))

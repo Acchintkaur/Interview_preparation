@@ -14,7 +14,7 @@ def LCS(X,Y):
         if X[i-1]==Y[j-1]:
             lcs+=X[i-1]
             i-=1
-            j-=1
+            j-=1  
         elif X[i-1]>Y[j-1]:
             i-=1
         else:

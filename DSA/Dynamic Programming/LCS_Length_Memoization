@@ -9,6 +9,6 @@ def LCS(X,Y,m,n,lookup):
             lookup[key] = max(LCS(X,Y,m-1,n,lookup),LCS(X,Y,m,n-1,lookup))
     return lookup[key]
 X=input()
-Y=input()
+Y=input()  
 lookup = {}
 print(LCS(X,Y,len(X),len(Y),lookup))

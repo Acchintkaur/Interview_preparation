@@ -10,7 +10,7 @@ def LCS(X, Y, m, n, lookup):
         return LCS(X, Y, m, n - 1, lookup)
 
 def LCSLength(X, Y, m, n, lookup):
-    for i in range(1, m + 1):
+    for i in range(1, m + 1):  
         for j in range(1, n + 1):
             if X[i - 1] == Y[j - 1]:
                 lookup[i][j] = lookup[i - 1][j - 1] + 1
